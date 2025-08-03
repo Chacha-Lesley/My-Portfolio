@@ -274,3 +274,219 @@ body, .main {
   0%   { transform: scale(1.09) rotate(-1deg);}
   100% { transform: scale(0.96);}
 }
+
+#my-timeline {
+  max-width: 650px;
+  margin: 3rem auto;
+  padding: 2rem 2.4rem;
+  background: #fff9ed;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 18px rgba(244,156,62,0.11);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#my-timeline h2 {
+  color: #f49c3e;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  letter-spacing: 0.03em;
+  position: relative;
+}
+
+#my-timeline details {
+  background: #fff3dc;
+  border-radius: 1rem;
+  margin-bottom: 1.4rem;
+  padding: 1.3rem 1.8rem;
+  box-shadow: 0 1px 6px rgba(244,156,62,0.1);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#my-timeline details[open] {
+  background: #f4a43e20;
+  box-shadow: 0 3px 14px rgba(244,156,62,0.2);
+}
+
+#my-timeline summary {
+  font-weight: 700;
+  font-size: 1.17rem;
+  color: #ea880b;
+  outline: none;
+  list-style: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+#my-timeline summary::-webkit-details-marker {
+  display: none;
+}
+
+#my-timeline summary::before {
+  content: "▶";
+  display: inline-block;
+  margin-right: 0.75rem;
+  font-size: 0.85rem;
+  transition: transform 0.3s ease;
+  color: #f49c3e;
+  transform-origin: center;
+}
+
+#my-timeline details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+#my-timeline details p {
+  margin-top: 0.9rem;
+  line-height: 1.45;
+  font-size: 1.07rem;
+  color: #333;
+  padding-left: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  #my-timeline {
+    padding: 1.5rem 1rem;
+  }
+  #my-timeline h2 {
+    font-size: 2rem;
+  }
+  #my-timeline details {
+    padding: 1rem 1.25rem;
+  }
+  #my-timeline details p {
+    font-size: 1rem;
+    padding-left: 1.2rem;
+  }
+}
+
+#fun-facts {
+  max-width: 520px;
+  margin: 3rem auto 2rem auto;
+  text-align: center;
+}
+
+#fun-facts h3 {
+  color: #f49c3e;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.33rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.03em;
+}
+
+.fun-facts-box {
+  background: #fff3dc;
+  border-left: 5px solid orange;
+  border-radius: 1.1rem;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 2px 12px rgba(244,156,62,0.13);
+  text-align: left;
+}
+
+.fun-facts-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fun-facts-box li {
+  margin-bottom: 0.72em;
+  font-size: 1.08rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8em;
+  line-height: 1.4;
+}
+
+.fun-facts-box li:last-child {
+  margin-bottom: 0;
+}
+
+.fun-facts-box li .icon {
+  font-size: 1.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+h2 {
+  font-size: 2.5rem;    
+  color: #130a01;  
+  font-weight: 700; 
+  text-transform: SentenceCase;  
+  letter-spacing: 0.08em;   
+  text-align: left;      
+  margin-bottom: 1.5rem;
+  font-family: 'Courier New', Courier, monospace; 
+}
+
+#about-me {
+  max-width: 650px;
+  margin: 3.5rem auto 2.5rem auto;
+  padding: 2rem 2.2rem 1.5rem 2.2rem;
+  background: #fff9ed;
+  border-radius: 1.3rem;
+  box-shadow: 0 2px 18px rgba(244, 156, 62, 0.11);
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
+}
+
+#about-me h2 {
+  text-align: center;
+  color: #f49c3e;
+  font-size: 2.4rem;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+#about-me h2::after {
+  content: '';
+  display: block;
+  width: 65px;
+  height: 4px;
+  background: #f49c3e;
+  border-radius: 2.5px;
+  margin: 0.7em auto 0 auto;
+  box-shadow: 0 2px 8px rgba(244, 156, 62, 0.18);
+}
+
+#about-me p {
+  color: #333;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  margin-bottom: 1.15em;
+}
+
+#about-me ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.1em;
+}
+
+#about-me ul li {
+  margin-bottom: 0.69em;
+  padding-left: 1.6em;
+  position: relative;
+  font-size: 1.08rem;
+  line-height: 1.5;
+}
+
+#about-me ul li::before {
+  content: '';
+  position: absolute;
+  left: 0.14em;
+  top: 0.35em;
+  width: 1.1em;
+  height: 1.1em;
+  border-radius: 50%;
+  background: #ffe7bc;
+  box-shadow: 0 0 0 2px #f49c3e;
+  display: inline-block;
+  vertical-align: middle;
+}
